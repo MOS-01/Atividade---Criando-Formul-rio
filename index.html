@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <meta name="description" content="">
+    <link rel="icon" href="./imagens/favicon.jpeg">
+</head>
+<body>
+    <form action="Formulário">   
+        <fieldset>
+            <legend>Formulário</legend>
+            <div>
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="nameId" placeholder="Digite seu nome aqui..." required>
+               
+            </div>
+            <div>
+                <br>
+                <label for="email">Email</label>
+                <input type="tex" id="email" name="email" placeholder="Digite sseu email aqui..." required>
+            </div>
+            <div>
+                <br>
+                <label for="descricao">Descrição:</label>
+                <textarea name="descricao" id="descricao" cols="" rows="3" placeholder="Eu sou..." required></textarea>
+            </div>
+            <div>
+                <br>
+                <label for="modulo">Módulo</label>
+                <select name="modulo" id="modulo">
+                    <option value="free">Escolher módulo</option>
+                    <option value="free">Grátis</option>
+                    <option value="confort">Confort</option>
+                    <option value="premium">Premium</option>
+                </select>                
+            </div>
+            <div>
+                <br>
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" maxlength="8" required>
+            </div>
+            <div>
+                <br>
+                <label for="confirmarsenha">Confirmar Senha</label>
+                <input type="password" id="confirmarsenha" name="confirmarsenha" maxlength="8" required>
+            </div>
+            <div>
+                <h2>Deseja receber novidades no seu e-mail?</h2>
+                <label for="novidades">Sim</label>
+                <input type="radio" id="novidades" name="novidades" value="sim">
+                <label for="novidades">Não</label>
+                <input type="radio" id="novidades" name="novidades" value="nao">
+            </div>
+            <button type="submit">Cadastrar</button>
+        </fieldset>
+    </form>
+</body>
+</html>
